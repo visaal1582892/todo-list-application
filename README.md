@@ -6,6 +6,8 @@ This is a **React + Vite-based To-Do List Application** that helps users efficie
 
 GitHub Repo Link: [https://github.com/visaal1582892/todo-list-application](https://github.com/visaal1582892/todo-list-application)
 
+Deployed Vercel Link: [https://todo-list-application-wine.vercel.app/](https://todo-list-application-wine.vercel.app/)
+
 ## 🚀 Features
 
 - ✅ **Add Tasks** - Quickly add new tasks to your list.
