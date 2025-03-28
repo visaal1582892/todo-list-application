@@ -1,3 +1,5 @@
+// Header Component
+
 let Header = () => {
     return (
         <header className="flex justify-center items-center bg-slate-900 w-[100%] h-[14svh]">

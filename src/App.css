@@ -4,6 +4,8 @@
 
     --animate-typing: type 3s cubic-bezier(0.68,-0.55,0.27,1.55)
     ;
+    --animate-sliding: slide 1s cubic-bezier(0.25, 0.1, 0.25, 1);
+    --animate-sliding-reverse: slide 1s cubic-bezier(0.25, 0.1, 0.25, 1) reverse;
 
     @keyframes type{
         from{
@@ -13,10 +15,19 @@
             width: 10ch;
         }
     }
+
+    @keyframes slide{
+        from {
+            right: -30%;
+        }
+        to{
+            right: 0;
+        }
+    }
 }
 
 .button {
-    @apply bg-orange-500 text-slate-900 text-lg px-3 py-1 flex justify-center items-center hover:bg-orange-400 outline-slate-800;
+    @apply bg-orange-500 text-slate-900 text-lg px-3 py-1 flex justify-center items-center hover:bg-orange-400 hover:outline-slate-800 hover:outline-2;
 }
 
 input:-webkit-autofill {
