@@ -9,7 +9,7 @@ let TodoList = (props) => {
             {props.todos.length!=0?props.todos.map(todo=>(
                 <TodoHead key={todo.id} todo={todo} markAsComplete={props.markAsComplete} deleteTodo={props.deleteTodo} editTodo={props.editTodo} />
             )):(<div className="flex w-[90%] h-[90%] justify-center items-center text-3xl text-center text-slate-500 font-medium flex-wrap">
-                <img src="/images/emptyIcon.png" alt="emptyIcon" className="h-[50%] min-w-max" />
+                <img src="/images/emptyIcon.webp" alt="emptyIcon" className="h-[50%] min-w-max" />
                 <p>No Tasks added yet. Click add task to some tasks</p> </div>)}
         </div>
     );

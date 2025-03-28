@@ -45,13 +45,13 @@ let TodoHead = (props) => {
             <textarea className="col-span-3 border-2 rounded-lg outline-none px-2 py-1 text-lg auto-fill-none flex justify-center items-center field-sizing-content text-orange-500 font-medium w-[100%]" autoComplete="off" value={input} onChange={(event)=>handleTextareaChange(event)} autoFocus={true}></textarea>}
 
             {/* Button to handle show options and confirm edit */}
-            <button className="bg-transparent col-span-2 h-12 w-17 flex justify-center items-center shrink-0 grow-0 hover:outline-2 hover:outline-orange-500" onClick={edit?handleConfirmEdit:handleOptionsClick}><img src={edit?"/images/okIcon.png":"/images/menuIcon.png"} alt="menuIcon" className="h-[100%] w-[100%]"/></button>
+            <button className="bg-transparent col-span-2 h-12 w-17 flex justify-center items-center shrink-0 grow-0 hover:outline-2 hover:outline-orange-500" onClick={edit?handleConfirmEdit:handleOptionsClick}><img src={edit?"/images/okIcon.webp":"/images/menuIcon.webp"} alt="menuIcon" className="h-[100%] w-[100%]"/></button>
 
             {/* shows options or hides options accoding to state */}
             {showOptions && <section id="options" className="absolute bg-orange-500 rounded-lg flex justify-around items-center w-40 h-[100%] right-0 animate-sliding">
-                <img src="/images/rightIcon.png" alt="rightIcon" className="cursor-pointer h-[30%]" onClick={handleOptionsClick} />
-                {!todo.completed && <img src="/images/editIcon.png" alt="editIcon" className="cursor-pointer h-[50%]" onClick={handleEditClick}/>}
-                <img src="/images/deleteIcon.png" alt="deleteIcon" className="h-[50%] cursor-pointer" onClick={() => props.deleteTodo(todo.id)}/>
+                <img src="/images/rightIcon.webp" alt="rightIcon" className="cursor-pointer h-[30%]" onClick={handleOptionsClick} />
+                {!todo.completed && <img src="/images/editIcon.webp" alt="editIcon" className="cursor-pointer h-[50%]" onClick={handleEditClick}/>}
+                <img src="/images/deleteIcon.webp" alt="deleteIcon" className="h-[50%] cursor-pointer" onClick={() => props.deleteTodo(todo.id)}/>
             </section>}
         </div>
     )
