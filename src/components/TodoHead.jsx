@@ -42,7 +42,7 @@ let TodoHead = (props) => {
 
             {/* Shows task name or input according to the edit state */}
             {!edit?<p className={`text-orange-500 text-xl break-words w-[100%] h-[100%] text-center col-span-7 flex items-center overflow-x-auto px-1 ${todo.completed && "line-through decoration-3 decoration-white"}`}>{props.todo.task}</p>:
-            <textarea className="col-span-3 border-2 rounded-lg outline-none px-2 py-1 text-lg auto-fill-none flex justify-center items-center field-sizing-content text-orange-500 font-medium w-[100%]" autoComplete="off" value={input} onChange={(event)=>handleTextareaChange(event)}></textarea>}
+            <textarea className="col-span-3 border-2 rounded-lg outline-none px-2 py-1 text-lg auto-fill-none flex justify-center items-center field-sizing-content text-orange-500 font-medium w-[100%]" autoComplete="off" value={input} onChange={(event)=>handleTextareaChange(event)} autoFocus={true}></textarea>}
 
             {/* Button to handle show options and confirm edit */}
             <button className="bg-transparent col-span-2 h-12 w-17 flex justify-center items-center shrink-0 grow-0 hover:outline-2 hover:outline-orange-500" onClick={edit?handleConfirmEdit:handleOptionsClick}><img src={edit?"/images/okIcon.png":"/images/menuIcon.png"} alt="menuIcon" className="h-[100%] w-[100%]"/></button>

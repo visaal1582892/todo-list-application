@@ -1,12 +1,65 @@
-# React + Vite
+# To-Do List Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Project Overview
 
-Currently, two official plugins are available:
+This is a **React + Vite-based To-Do List Application** that helps users efficiently manage tasks. The app allows users to **add, edit, delete, and mark tasks as complete**, with smooth animations and a clean UI powered by **Tailwind CSS**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+GitHub Repo Link: [https://github.com/visaal1582892/todo-list-application](https://github.com/visaal1582892/todo-list-application)
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ✅ **Add Tasks** - Quickly add new tasks to your list.
+- ✏️ **Edit Tasks** - Modify existing tasks easily.
+- 🗑 **Delete Tasks** - Remove tasks when no longer needed.
+- ✔ **Mark as Complete** - Toggle tasks as completed/incomplete.
+- 🎨 **Smooth Animations** - Slide-in effects for the options menu.
+- 🔥 **Responsive UI** - Fully optimized for mobile and desktop.
+
+## 🛠 Tech Stack
+
+- **Frontend:** React (Vite), Tailwind CSS
+- **State Management:** useState (React Hooks)
+
+## 🎬 Installation & Setup
+
+1. **Clone the repository**
+   ```sh
+   git clone https://github.com/visaal1582892/todo-list-application.git
+   cd todo-list-application
+   ```
+2. **Install dependencies**
+   ```sh
+   npm install
+   ```
+3. **Run the app**
+   ```sh
+   npm run dev
+   ```
+4. Open `http://localhost:5173/` (Vite default) in your browser.
+
+## 📌 How to Use
+
+1. **Enter a task** in the input field and press `Enter` or click `Add`.
+2. Click on a **task** to edit it.
+3. Click the **checkbox** to mark a task as complete.
+4. Click the `Options` button to reveal **Edit** and **Delete** actions.
+5. Tasks persist across page refreshes (if local storage is implemented).
+
+## 🛠 Future Enhancements
+
+- 📅 **Due Date Selection** for tasks.
+- 🏷 **Categories & Tags** for better organization.
+- ☁ **Cloud Sync** to store tasks online.
+
+## 🤝 Contributing
+
+Feel free to fork and submit pull requests! Contributions are always welcome. 😊
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+Made with ❤️ by Datla Rohit Varma
+

@@ -5,7 +5,6 @@
     --animate-typing: type 3s cubic-bezier(0.68,-0.55,0.27,1.55)
     ;
     --animate-sliding: slide 1s cubic-bezier(0.25, 0.1, 0.25, 1);
-    --animate-sliding-reverse: slide 1s cubic-bezier(0.25, 0.1, 0.25, 1) reverse;
 
     @keyframes type{
         from{

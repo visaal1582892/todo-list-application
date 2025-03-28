@@ -14,6 +14,7 @@ let MainBody = () => {
         let updatedTodos=todos.filter(todo => todo.id!=id);
         setTodos(updatedTodos);
         localStorage.setItem('todolist',JSON.stringify(updatedTodos));
+        alert("task deleted successfully");
     }
 
     // Fun for editing task
@@ -23,6 +24,7 @@ let MainBody = () => {
         updatedTodos[index].task=input;
         setTodos(updatedTodos);
         localStorage.setItem('todolist',JSON.stringify(updatedTodos));
+        alert("task edited successfully");
     }
 
     // Fun for adding a new task
