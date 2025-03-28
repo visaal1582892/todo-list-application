@@ -22,7 +22,7 @@ let AddTask = (props) => {
 
     return (
         <div className="flex flex-col w-[90%] justify-around items-center mt-7 lg:w-[60%]">
-            <button className="button" onClick={handleClick}>Add Task</button>
+            <button className="button" onClick={handleClick}>{showInput?"Hide Input":"Add Task"}</button>
             {showInput && <section id="addTask" className="mt-7">
                 <h2 className="font-semibold text-lg text-center text-slate-900">Enter your task here. </h2>
                 <form onSubmit={(event)=>handleSubmit(event)} className="grid grid-cols-4 bg-slate-700/90 mt-6 text-xl p-5 space-y-6 text-orange-500 font-medium rounded-lg">
